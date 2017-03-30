@@ -1,0 +1,26 @@
+{
+    "name": "peckrob/nest-watch",
+    "description": "A script to take data from Nest and put it into InfluxDB.",
+    "keywords": ["nest", "influxdb"],
+    "license": "GPLv3",
+    "type": "project",
+    "homepage": "https://github.com/gboudreau/nest-api",
+    "authors": [
+        {
+            "name": "Rob Peck",
+            "email": "rob@robpeck.com",
+            "homepage": "https://www.robpeck.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "gboudreau/nest-api": "dev-master",
+        "influxdb/influxdb-php": "^1.14",
+        "wp-cli/php-cli-tools": "^0.11.2"
+    },
+    "autoload-dev": {
+        "classmap": [
+            "vendor/gboudreau/nest-api/nest.class.php"
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+[general]
+postal_code=12345
+
+[nest]
+username=you@example.com
+password=yourpassword
+
+[influxdb]
+host=example.com
+port=8086
+database=nest
