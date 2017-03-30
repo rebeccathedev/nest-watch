@@ -1,0 +1,11 @@
+[general]
+postal_code=12345
+
+[nest]
+me@rebeccapeck.org
+password=yourpassword
+
+[influxdb]
+host=example.com
+port=8086
+database=nest
