@@ -111,8 +111,6 @@ if (!empty($devices)) {
                 "network.online" => (float)$info->network->online
             ];
 
-            print_r($data); die();
-
             foreach ($data as $key => $value) {
                 $points[] = new Point(
                     "nest",
