@@ -108,7 +108,10 @@ if (!empty($devices)) {
                 "active_stages.cool.stage1" => (float)$state->active_stages->cool->stage1,
                 "active_stages.cool.stage2" => (float)$state->active_stages->cool->stage2,
                 "active_stages.cool.stage3" => (float)$state->active_stages->cool->stage3,
+                "network.online" => (float)$info->network->online
             ];
+
+            print_r($data); die();
 
             foreach ($data as $key => $value) {
                 $points[] = new Point(
