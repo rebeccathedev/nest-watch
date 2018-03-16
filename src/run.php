@@ -116,8 +116,8 @@ if (!empty($devices)) {
                     break;
                 case "range":
                     $data["target.mode"] = (float) 1;
-                    $data["target.cool_temperature"] = (float) $info->target->temperature[0];
-                    $data["target.heat_temperature"] = (float) $info->target->temperature[1];
+                    $data["target.cool_temperature"] = (float) $info->target->temperature[1];
+                    $data["target.heat_temperature"] = (float) $info->target->temperature[0];
                     break;
                 case "cool":
                     $data["target.mode"] = (float) 2;
