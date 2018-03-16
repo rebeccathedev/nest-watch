@@ -1,4 +1,4 @@
 #!/usr/bin/env php
 <?php
 
-include "src/run.php";
+include "/home/pi/nest-watch/src/run.php";
