@@ -67,9 +67,7 @@ if (!empty($weather)) {
         $points[] = new Point(
             "weather",
             (float)$value,
-            ["key" => $key],
-            [],
-            time()
+            ["key" => $key]
         );
     }
 }
@@ -108,16 +106,34 @@ if (!empty($devices)) {
                 "active_stages.cool.stage1" => (float)$state->active_stages->cool->stage1,
                 "active_stages.cool.stage2" => (float)$state->active_stages->cool->stage2,
                 "active_stages.cool.stage3" => (float)$state->active_stages->cool->stage3,
-                "network.online" => (float)$info->network->online
+                "network.online" => (float)$info->network->online,
+		        "target.timetotarget" => (float) $info->target->time_to_target
             ];
+
+            switch($info->target->mode){
+                case "off":
+                    $data["target.mode"] = (float) 0;
+                    break;
+                case "range":
+                    $data["target.mode"] = (float) 1;
+                    $data["target.cool_temperature"] = (float) $info->target->temperature[1];
+                    $data["target.heat_temperature"] = (float) $info->target->temperature[0];
+                    break;
+                case "cool":
+                    $data["target.mode"] = (float) 2;
+                    $data["target.cool_temperature"] = (float) $info->target->temperature;
+                    break;
+                case "heat":
+                    $data["target.mode"] = (float) 3;
+                    $data["target.heat_temperature"] = (float) $info->target->temperature;
+                    break;
+            }
 
             foreach ($data as $key => $value) {
                 $points[] = new Point(
                     "nest",
                     $value,
-                    ["key" => $key, "location" => $info->where, "name" => $info->name],
-                    [],
-                    time()
+                    ["key" => $key, "location" => $info->where, "name" => $info->name]
                 );
             }
         }

@@ -81,6 +81,15 @@ crontab -e
 */5 * * * * /opt/nest-watch/nestwatch
 ```
 
-## license
+## Nest Target Mode
+
+```
+0 = Off
+1 = Range (Cool & Heat)
+2 = Cool
+3 = Heat
+```
+
+## License
 
 GPLv3
