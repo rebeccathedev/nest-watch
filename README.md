@@ -90,6 +90,6 @@ crontab -e
 3 = Heat
 ```
 
-## license
+## License
 
 GPLv3
