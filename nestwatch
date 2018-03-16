@@ -1,4 +1,4 @@
 #!/usr/bin/env php
 <?php
 
-include "/home/pi/nest-watch/src/run.php";
+include dirname(__DIR__)."/src/run.php";
