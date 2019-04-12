@@ -2,8 +2,6 @@
 
 include "vendor/autoload.php";
 
-date_default_timezone_set("America/Chicago");
-
 use cli\Arguments;
 use InfluxDB\Point;
 use InfluxDB\Database;
@@ -49,6 +47,8 @@ if (empty($config_file)) {
 }
 
 $config = parse_ini_file($config_file, true);
+
+date_default_timezone_set($config["general"]["time_zone_string"]);
 
 if (VERBOSE) echo "Attempting to connect to Nest.\n";
 $nest = new Nest($config["nest"]["username"], $config["nest"]["password"]);
