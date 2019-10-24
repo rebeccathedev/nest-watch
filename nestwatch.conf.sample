@@ -1,5 +1,6 @@
 [general]
 postal_code=12345
+time_zone_string="America/Chicago"
 
 [nest]
 username=you@example.com
