@@ -1,3 +1,9 @@
+# Maintainer Wanted
+
+October 2019: I no longer use Nest thermostats, so I have no need for this code
+anymore and will not be actively maintaining it. If you are interested in taking
+over, [comment here](https://github.com/peckrob/nest-watch/issues/6).
+
 # Nest Watch
 
 Nest Watch is a small command-line script that polls your Nest thermostats and
