@@ -46,7 +46,7 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.2.3",
+            "version": "7.15.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
@@ -79,7 +79,7 @@
                     "src/functions_include.php"
                 ],
                 "psr-4": {
-                    "GuzzleHttp\\": "src/"
+                    "GuzzleHttp\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -134,7 +134,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
+                    "GuzzleHttp\Promise\": "src/"
                 },
                 "files": [
                     "src/functions_include.php"
@@ -159,7 +159,7 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.4.2",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
@@ -189,7 +189,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
+                    "GuzzleHttp\Psr7\": "src/"
                 },
                 "files": [
                     "src/functions_include.php"
@@ -253,7 +253,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "InfluxDB\\": "src/InfluxDB"
+                    "InfluxDB\": "src/InfluxDB"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -311,7 +311,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Psr\\Http\\Message\\": "src/"
+                    "Psr\Http\Message\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -372,7 +372,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Symfony\\Component\\EventDispatcher\\": ""
+                    "Symfony\Component\EventDispatcher\": ""
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
